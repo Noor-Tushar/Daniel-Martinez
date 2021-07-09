@@ -31,14 +31,7 @@ a, a:hover {
 	flex-basis: 50%;
 }
 
-.header-right {
-	background-image: url('../img/cover.PNG');
-	/*width: 50%;*/
-	background-size: cover;
-	background-repeat: no-repeat;
-	/*height: 100vh;*/
-	flex-basis: 50%;
-}
+
 
 .navbar{
 	margin: 30px 50px;
@@ -85,9 +78,25 @@ padding: 200px;
 	font-size: 15px;
 }
 
+.header-right {
+	background-image: url('../img/cover.PNG');
+	height: 100vh;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	flex-basis: 50%;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
 .logos {
 	text-align: center;
-	margin-top: 400px;
+	/*margin-top: 400px;*/
+	position: fixed;
+	right: 0;
+
 }
 .logos ul {
 	
@@ -98,8 +107,6 @@ padding: 200px;
 
 .logos ul li a {
 	background: #f7dc4f;
-	/*height: 30px;
-	width: 30px;*/
 	padding: 20px 0px;
 	transition: 0.3s;
 }
@@ -156,6 +163,7 @@ padding: 200px;
 	font-weight: 700;
 	cursor: pointer;
 	transition: 0.3s;
+	font-size: 15px;
 }
 
 .about-me button:hover {
@@ -189,8 +197,9 @@ padding: 200px;
 	background-image: url('../img/action.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	width: auto;
-	height: 100vh;
+	background-position: center;
+	width: 100%;
+	height: 100%;
 	text-align: center;
 
 }
@@ -236,6 +245,7 @@ padding: 200px;
 
 .photo-box img {
 	padding: 15px;
+	max-width: 100%;
 }
 
 /****Portfolio-2 Ends Here****/
@@ -250,23 +260,34 @@ display: flex;
 
 .contact-left {
 	flex-basis: 50%;
+
+}
+
+.contact-left img {
+	width: 100%;
+
 }
 
 .contact-right {
 	background: #015761;
 	flex-basis: 50%;
-	padding: 150px;
-	padding-left: 200px;
+	display: flex;
+	height: auto;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	padding-right: 200px;
 }
 
-.contact-right h2 {
+.h2_ {
 	color: #f7dc4f;
-	font-size: 50px;
-	padding: 10px 0;
+	font-size: 40px;
+	/*padding: 10px 0;*/
 }
 
 .texts {
 	color: white;
+	padding-right: 0px;
 	
 }
 .texts h4 {
@@ -293,12 +314,21 @@ display: flex;
 }
 
 .contact-logo a {
-	color: white;
+	;
+	
+}
+
+.contact-logo a i:hover {
+	color: #f7dc4f;
+	transform: scale(1.3);
+	transition: 0.3s;
 	
 }
 
 .contact-logo a i {
+	color: white;
 padding-right: 20px !important;
+transition: 0.3s;
 	
 }
 /****Contact Ends Here****/
