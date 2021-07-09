@@ -254,25 +254,25 @@ padding: 200px;
 
 .contact {
 display: flex;
+height: 100vh;
 }
 
 
 
 .contact-left {
 	flex-basis: 50%;
-
-}
-
-.contact-left img {
+	background-image: url(../img/contact.PNG);
 	width: 100%;
-
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 .contact-right {
 	background: #015761;
 	flex-basis: 50%;
 	display: flex;
-	height: auto;
+	/*height: auto;*/
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
